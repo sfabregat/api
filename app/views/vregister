@@ -1,0 +1,17 @@
+<?php
+	/**
+	 *  vRegister
+	 *  Prepares and loads the corresponding Template
+	 *  @author Sergio
+	 * 
+	 * */
+	class vRegister extends View{
+
+		function __construct(){
+			parent::__construct();
+			
+			$this->tpl=Template::load('register',$this->view_data);
+			
+		}
+
+	}
